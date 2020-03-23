@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link  type="text/css" rel="stylesheet" href="{{ asset('css/style.css') }}">
+</head>
+<body>
+<header>
+    <div class="logo ">
+        <img class="img-fluid" src="{{ asset('img/logo_google.png') }}" alt="logo" width="850" height="300"></div>
+    <nav>
+        <ul>
+            <li>Lien 1</li>
+            <li>Lien 2</li>
+            <li>Lien 3</li>
+        </ul>
+    </nav>
+</header>
+
+
+    <main>
+        <div id="blocArticles">
+            <ul>
+            {% for book in books %}
+                    <li>
+                        <p><a href="book/{{ book.id}}">{{ book.title }}</a></h4>
+                        <p>Résumé : {{ book.resume }}<br/>
+                        <p>Author : {{ book.author }}<br/>
+                        <p>Nombre de page : {{ book.nbpages }}</p>
+                    </li>
+            {% endfor %}
+            </ul>
+        </div>
+    </main>
+
+</body>
