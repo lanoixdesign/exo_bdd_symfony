@@ -98,8 +98,10 @@ class HomeController extends AbstractController
      */
     Public function searchByResume(BookRepository $booRepository )
     {
-    $books = $booRepository->getByWordInResume();
+        $books = $booRepository->getByWordInResume();
 
-    dump($books);die;
+        return $this->render('search.html.twig',[
+            'books'=> $books
+        ]);
     }
 }
