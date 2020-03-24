@@ -23,14 +23,16 @@
 
 
     <main>
-        <div id="blocArticles">
+        <div class="blocArticles">
             <ul>
             {% for book in books %}
                     <li>
-                        <p><a href="book/{{ book.id}}">{{ book.title }}</a></h4>
-                        <p>Résumé : {{ book.resume }}<br/>
-                        <p>Author : {{ book.author }}<br/>
-                        <p>Nombre de page : {{ book.nbpages }}</p>
+                        <h4><a href=" {{ path('book', {'id':book.id}) }}">{{ book.title }}</a></h4>
+                        <p>Résumé : {{ book.resume }}
+                            <br/>
+                        Author : {{ book.author }}
+                            <br/>
+                        Nombre de page : {{ book.nbpages }}</p>
                     </li>
             {% endfor %}
             </ul>
