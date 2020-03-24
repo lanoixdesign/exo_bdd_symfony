@@ -73,9 +73,33 @@ class HomeController extends AbstractController
 
         $entityManager->flush();
 
-        return new Response('livre supprimé');
+       // return new Response('livre supprimé');
+        return $this->redirectToRoute('accueil');
     }
 
+    /**
+     * @Route("/update/{id}", name="book_update")
+     */
+    Public function updateBook(BookRepository $bookRepository, EntityManagerInterface $entityManager, $id)
+    {
+        $book = $bookRepository->find($id);
 
+        $book->setTitle('titre modifié ! ');
 
+        $entityManager->persist($book);
+
+        $entityManager->flush();
+
+        return new Response('le livre a bien été modifié ! ');
+    }
+
+    /**
+     * @Route("/search", name="book_search")
+     */
+    Public function searchByResume(BookRepository $booRepository )
+    {
+    $books = $booRepository->getByWordInResume();
+
+    dump($books);die;
+    }
 }
