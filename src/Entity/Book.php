@@ -46,11 +46,10 @@ class Book
         return $this->title;
     }
 
-    public function setTitle(string $title): self
+    public function setTitle(string $title): void
     {
         $this->title = $title;
 
-        return $this;
     }
 
     public function getResume(): ?string
@@ -58,11 +57,10 @@ class Book
         return $this->resume;
     }
 
-    public function setResume(): self
+    public function setResume(string $resume)
     {
         $this->resume = $resume;
 
-        return $this;
     }
 
     public function getAuthor(): ?string
@@ -70,11 +68,10 @@ class Book
         return $this->author;
     }
 
-    public function setAuthor(): self
+    public function setAuthor(string $author): void
     {
         $this->author = $author;
 
-        return $this;
     }
 
     public function getNbpages(): ?string
@@ -82,11 +79,11 @@ class Book
         return $this->nbpages;
     }
 
-    public function setNbpages(): self
+    public function setNbpages($nbpages): void
     {
         $this->nbpages = $nbpages;
 
-        return $this;
+
     }
 
 }

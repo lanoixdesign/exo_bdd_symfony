@@ -43,11 +43,11 @@ class HomeController extends AbstractController
      */
     Public function insertBook(EntityManagerInterface $entityManager)
     {
-        $book =new Book();
+        $book = new Book();
 
         $book->setTitle('titre depuis le controleur');
         $book->setAuthor('JPP');
-        $book->setNbpages(200);
+        $book->setNbPages(200);
         $book->setResume('teqkjsbdkueh au qhskdjaz  d azhdk adzi');
 
         $entityManager->persist($book);
