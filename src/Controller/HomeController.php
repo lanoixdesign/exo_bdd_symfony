@@ -2,7 +2,9 @@
 
 namespace App\Controller;
 
+use App\Entity\Book;
 use App\Repository\BookRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -34,5 +36,29 @@ class HomeController extends AbstractController
             'book' => $book
         ]);
     }
+
+
+    /**
+     * @Route("/insert", name="book_insert")
+     */
+    Public function insertBook(EntityManagerInterface $entityManager)
+    {
+        $book =new Book();
+
+        $book->setTitle('titre depuis le controleur');
+        $book->setAuthor('JPP');
+        $book->setNbpages(200);
+        $book->setResume('teqkjsbdkueh au qhskdjaz  d azhdk adzi');
+
+        $entityManager->persist($book);
+
+        $entityManager->flush();
+
+        return new Response('livre enregistré');
+    }
+
+
+
+
 
 }

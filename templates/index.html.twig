@@ -28,11 +28,11 @@
             {% for book in books %}
                     <li>
                         <h4><a href=" {{ path('book', {'id':book.id}) }}">{{ book.title }}</a></h4>
-                        <p>Résumé : {{ book.resume }}
-                            <br/>
-                        Author : {{ book.author }}
-                            <br/>
-                        Nombre de page : {{ book.nbpages }}</p>
+                        <p>Résumé : {{ book.resume }}</p>
+
+                        <p>Author : {{ book.author }}</p>
+
+                       <p> Nombre de page : {{ book.nbpages }}</p>
                     </li>
             {% endfor %}
             </ul>
