@@ -41,14 +41,19 @@ class HomeController extends AbstractController
     /**
      * @Route("/insert", name="book_insert")
      */
-    Public function insertBook(EntityManagerInterface $entityManager)
+    Public function insertBook(EntityManagerInterface $entityManager, Request $request)
     {
         $book = new Book();
 
-        $book->setTitle('titre depuis le controleur');
-        $book->setAuthor('JPP');
-        $book->setNbPages(200);
-        $book->setResume('teqkjsbdkueh au qhskdjaz  d azhdk adzi');
+        $title = $request->query->get('title');
+        $author = $request->query->get('author');
+        $nbpages = $request->query->get('nbpages');
+        $resume = $request->query->get('resume');
+
+        $book->setTitle($title);
+        $book->setAuthor($author);
+        $book->setNbPages($nbpages);
+        $book->setResume($resume);
 
         $entityManager->persist($book);
 
