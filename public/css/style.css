@@ -77,7 +77,7 @@ main{
 
 }
 .blocArticles ul li:hover{
-    animation: pulse 1s linear 0s  normal;
+    animation: pulse 1s linear 0s infinite normal;
 }
 
 .img-fluid{

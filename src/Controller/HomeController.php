@@ -62,7 +62,19 @@ class HomeController extends AbstractController
         return new Response('livre enregistré');
     }
 
+    /**
+     * @Route("/delete/{id}", name="book_delete")
+     */
+    public function deleteBook(BookRepository $bookRepository, EntityManagerInterface $entityManager, $id)
+    {
+        $book = $bookRepository->find($id);
 
+        $entityManager->remove($book);
+
+        $entityManager->flush();
+
+        return new Response('livre supprimé');
+    }
 
 
 
