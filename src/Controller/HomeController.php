@@ -96,12 +96,18 @@ class HomeController extends AbstractController
     /**
      * @Route("/search", name="book_search")
      */
-    Public function searchByResume(BookRepository $booRepository )
+    Public function searchByResume(BookRepository $booRepository, Request $request)
     {
-        $books = $booRepository->getByWordInResume();
+        $word = $request->query->get('word');
+        $books = $booRepository->getByWordInResume($word);
 
         return $this->render('search.html.twig',[
-            'books'=> $books
+            'books' => $books,
+            'word' => $word
         ]);
     }
+
+
+
+
 }

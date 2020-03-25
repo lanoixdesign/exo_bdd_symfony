@@ -80,6 +80,10 @@ main{
     animation: pulse 1s linear 0s infinite normal;
 }
 
+.blocArticles>div{
+
+}
+
 .img-fluid{
     width: 100%;
     height: auto;
