@@ -1,39 +1,7 @@
 
+{% extends "base.html.twig" %}
 
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-
-    <link  type="text/css" rel="stylesheet" href="{{ asset('css/style.css') }}">
-</head>
-<body>
-<header>
-    <div class="logo ">
-        <img class="img-fluid" src="{{ asset('img/logo_google.png') }}" alt="logo" width="850" height="300"></div>
-    <nav>
-        <ul>
-            <li>Lien 1</li>
-            <li>Lien 2</li>
-            <li>Lien 3</li>
-        </ul>
-    </nav>
-</header>
-
-
-    <main>
-
-        <div class="search">
-            <form action="{{ path('book_search') }}" method="get">
-                <label for="word"><strong>Que cherchez vous ? </strong></label>
-                <input type="text" name="word" placeholder="Votre recherche">
-            <input type="submit">
-
-            </form>
-        </div>
-
-
+{% block section2 %}
         <div class="blocArticles">
             <ul>
             {% for book in books %}
@@ -49,6 +17,4 @@
             {% endfor %}
             </ul>
         </div>
-    </main>
-
-</body>
+{% endblock %}
