@@ -3,16 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="5d20dfb1-d62c-43d3-85d6-f1cbc505c1a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AuteurController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/admin/AuteurController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/admin/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/auteurs/auteurs.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/auteurs/auteurs.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/auteurs/insert_auteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/auteurs/insert_auteur.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/auteurs/search_auteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/auteurs/search_auteur.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/auteurs/show_auteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/auteurs/show_auteur.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/books.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/books/books.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/books/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/search.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/books/search.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/admin/AuteurController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/admin/AuteurController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/admin/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/admin/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/auteurs/auteurs.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/auteurs/auteurs.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/auteurs/insert_auteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/auteurs/insert_auteur.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/auteurs/search_auteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/auteurs/search_auteur.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/auteurs/show_auteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/auteurs/show_auteur.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/books/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/books/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/books/search.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/books/search.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +186,7 @@
       <updated>1584954697812</updated>
       <workItem from="1584954699894" duration="8079000" />
       <workItem from="1584974663074" duration="32421000" />
-      <workItem from="1585212500023" duration="10887000" />
+      <workItem from="1585212500023" duration="11473000" />
     </task>
     <servers />
   </component>

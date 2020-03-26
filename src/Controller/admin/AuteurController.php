@@ -13,7 +13,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class AuteurController extends AbstractController
 {
     /**
-     * @Route("admin/auteurs", name="auteurs")
+     * @Route("admin/auteurs", name="admin_auteurs")
      */
     Public function auteur(AuteurRepository $auteurRepository)
     {
@@ -26,7 +26,7 @@ class AuteurController extends AbstractController
     }
 
     /**
-     * @Route("admin/auteurs/insert", name="insert_auteur")
+     * @Route("admin/auteurs/insert", name="admin_insert_auteur")
      */
     public function insertAuteur(Request $request,EntityManagerInterface $entityManager)
     {
@@ -55,7 +55,7 @@ class AuteurController extends AbstractController
     }
 
     /**
-     * @Route("admin/auteurs/delete/{id}", name="delete_auteur")
+     * @Route("admin/auteurs/delete/{id}", name="admin_delete_auteur")
      */
     public function updateAuteur(AuteurRepository $auteurRepository, EntityManagerInterface $entityManager, $id)
     {
@@ -63,12 +63,12 @@ class AuteurController extends AbstractController
         $entityManager->remove($auteur);
         $entityManager->flush();
 
-        return $this->redirectToRoute('accueil');
+        return $this->redirectToRoute('admin_accueil');
 
     }
 
     /**
-     * @Route("admin/auteurs/search", name="search_auteur")
+     * @Route("admin/auteurs/search", name="admin_search_auteur")
      */
     public function searchByName(AuteurRepository $auteurRepository, Request $request)
     {
@@ -82,7 +82,7 @@ class AuteurController extends AbstractController
     }
 
     /**
-     * @Route("admin/auteurs/show/{id}", name="show_auteur")
+     * @Route("admin/auteurs/show/{id}", name="admin_show_auteur")
      */
     Public function showAuteur(AuteurRepository $auteurRepository, $id)
     {

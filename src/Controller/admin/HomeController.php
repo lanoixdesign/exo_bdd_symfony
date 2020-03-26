@@ -15,7 +15,7 @@ class HomeController extends AbstractController
 
 
     /**
-     * @Route("admin/books/", name="accueil")
+     * @Route("admin/books/", name="admin_accueil")
      */
     public function accueil(BookRepository $bookRepository)
     {
@@ -27,7 +27,7 @@ class HomeController extends AbstractController
 
     }
     /**
-     * @Route("admin/books/book/{id}", name="book")
+     * @Route("admin/books/book/{id}", name="admin_book")
      */
     public function book(BookRepository $bookRepository, $id)
     {
@@ -39,7 +39,7 @@ class HomeController extends AbstractController
 
 
     /**
-     * @Route("admin/books/insert", name="book_insert")
+     * @Route("admin/books/insert", name="admin_book_insert")
      */
     Public function insertBook(EntityManagerInterface $entityManager, Request $request)
     {
@@ -63,7 +63,7 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("admin/books/delete/{id}", name="book_delete")
+     * @Route("admin/books/delete/{id}", name="admin_book_delete")
      */
     public function deleteBook(BookRepository $bookRepository, EntityManagerInterface $entityManager, $id)
     {
@@ -74,11 +74,11 @@ class HomeController extends AbstractController
         $entityManager->flush();
 
        // return new Response('livre supprimé');
-        return $this->redirectToRoute('auteurs');
+        return $this->redirectToRoute('admin_auteurs');
     }
 
     /**
-     * @Route("admin/books/update/{id}", name="book_update")
+     * @Route("admin/books/update/{id}", name="admin_book_update")
      */
     Public function updateBook(BookRepository $bookRepository, EntityManagerInterface $entityManager, $id)
     {
@@ -94,7 +94,7 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("admin/books/search", name="book_search")
+     * @Route("admin/books/search", name="admin_book_search")
      */
     Public function searchByResume(BookRepository $booRepository, Request $request)
     {

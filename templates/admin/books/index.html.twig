@@ -6,13 +6,13 @@
             <ul>
             {% for book in books %}
                     <li>
-                        <h4><a href="{{ path('book', {'id':book.id}) }}">{{ book.title }}</a></h4>
+                        <h4><a href="{{ path('admin_book', {'id':book.id}) }}">{{ book.title }}</a></h4>
                         <p>Résumé : {{ book.resume }}</p>
 
                         <p>Author : {{ book.author }}</p>
 
                        <p> Nombre de page : {{ book.nbpages }}</p>
-                        <p> <a href="{{ path('book_delete', {'id':book.id}) }}">Suprimer le livre</a></p>
+                        <p> <a href="{{ path('admin_book_delete', {'id':book.id}) }}">Suprimer le livre</a></p>
                     </li>
             {% endfor %}
             </ul>

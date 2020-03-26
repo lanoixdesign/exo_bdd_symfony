@@ -17,13 +17,13 @@
                 <img class="img-fluid" src="{{ asset('img/logo_google.png') }}" alt="logo" width="850" height="300"></div>
         <nav>
                 <ul>
-                    <li><a href="{{ path('accueil') }}">Accueil</a></li>
-                    <li><a href="{{ path('auteurs') }}">Auteurs</a></li>
-                    <li><a href="{{ path('insert_auteur') }}">Insérer Auteur</a></li>
+                    <li><a href="{{ path('admin_accueil') }}">Accueil</a></li>
+                    <li><a href="{{ path('admin_auteurs') }}">Auteurs</a></li>
+                    <li><a href="{{ path('admin_insert_auteur') }}">Insérer Auteur</a></li>
                 </ul>
         </nav>
         <div class="search">
-            <form action="{{ path('book_search') }}" method="get">
+            <form action="{{ path('admin_book_search') }}" method="get">
                 <label for="word"><strong>Recherchez-vous un livre ? </strong></label>
                 <input type="text" name="word" placeholder="Votre recherche">
                 <input type="submit">
@@ -32,7 +32,7 @@
         </div>
 
         <div class="search">
-            <form action="{{ path('search_auteur') }}" method="get">
+            <form action="{{ path('admin_search_auteur') }}" method="get">
                 <label for="wordname"><strong>Ou un auteur ? </strong></label>
                 <input type="text" name="wordname" placeholder="Votre recherche">
                 <input type="submit">
