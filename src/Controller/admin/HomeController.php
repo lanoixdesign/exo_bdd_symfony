@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controller\admin;
 
 use App\Entity\Book;
 use App\Repository\BookRepository;
@@ -15,31 +15,31 @@ class HomeController extends AbstractController
 
 
     /**
-     * @Route("/", name="accueil")
+     * @Route("admin/books/", name="accueil")
      */
     public function accueil(BookRepository $bookRepository)
     {
         $books = $bookRepository->findAll();
 
-        return $this->render('index.html.twig', [
+        return $this->render('admin/books/index.html.twig', [
             'books' => $books
         ]);
 
     }
     /**
-     * @Route("/book/{id}", name="book")
+     * @Route("admin/books/book/{id}", name="book")
      */
     public function book(BookRepository $bookRepository, $id)
     {
         $book = $bookRepository->find($id);
-        return $this->render('books.html.twig', [
+        return $this->render('admin/books/books.html.twig', [
             'book' => $book
         ]);
     }
 
 
     /**
-     * @Route("/insert", name="book_insert")
+     * @Route("admin/books/insert", name="book_insert")
      */
     Public function insertBook(EntityManagerInterface $entityManager, Request $request)
     {
@@ -63,7 +63,7 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/delete/{id}", name="book_delete")
+     * @Route("admin/books/delete/{id}", name="book_delete")
      */
     public function deleteBook(BookRepository $bookRepository, EntityManagerInterface $entityManager, $id)
     {
@@ -78,7 +78,7 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/update/{id}", name="book_update")
+     * @Route("admin/books/update/{id}", name="book_update")
      */
     Public function updateBook(BookRepository $bookRepository, EntityManagerInterface $entityManager, $id)
     {
@@ -94,14 +94,14 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/search", name="book_search")
+     * @Route("admin/books/search", name="book_search")
      */
     Public function searchByResume(BookRepository $booRepository, Request $request)
     {
         $word = $request->query->get('word');
         $books = $booRepository->getByWordInResume($word);
 
-        return $this->render('search.html.twig',[
+        return $this->render('admin/books/search.html.twig',[
             'books' => $books,
             'word' => $word
         ]);

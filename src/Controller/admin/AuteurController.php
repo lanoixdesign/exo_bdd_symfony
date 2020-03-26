@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controller\admin;
 
 use App\Entity\Auteur;
 use App\Repository\AuteurRepository;
@@ -13,20 +13,20 @@ use Symfony\Component\Routing\Annotation\Route;
 class AuteurController extends AbstractController
 {
     /**
-     * @Route("auteurs", name="auteurs")
+     * @Route("admin/auteurs", name="auteurs")
      */
     Public function auteur(AuteurRepository $auteurRepository)
     {
         $auteurs = $auteurRepository->findAll();
 
-        return $this->render('auteurs/auteurs.html.twig',[
+        return $this->render('admin/auteurs/auteurs.html.twig',[
             'auteurs' => $auteurs
             ]);
 
     }
 
     /**
-     * @Route("auteurs/insert", name="insert_auteur")
+     * @Route("admin/auteurs/insert", name="insert_auteur")
      */
     public function insertAuteur(Request $request,EntityManagerInterface $entityManager)
     {
@@ -48,12 +48,14 @@ class AuteurController extends AbstractController
 
         $entityManager->flush();
 
-        return new Response('Auteur enregistré');
+        return $this->render('admin/auteurs/insert_auteur.html.twig',[
+            'author'=> $auteur
+        ]);
 
     }
 
     /**
-     * @Route("auteurs/delete/{id}", name="delete_auteur")
+     * @Route("admin/auteurs/delete/{id}", name="delete_auteur")
      */
     public function updateAuteur(AuteurRepository $auteurRepository, EntityManagerInterface $entityManager, $id)
     {
@@ -66,27 +68,27 @@ class AuteurController extends AbstractController
     }
 
     /**
-     * @Route("auteurs/search", name="search_auteur")
+     * @Route("admin/auteurs/search", name="search_auteur")
      */
     public function searchByName(AuteurRepository $auteurRepository, Request $request)
     {
         $wordname =$request->query->get('wordname');
         $auteurs = $auteurRepository->getByAuteurInLibrary($wordname);
 
-        return $this->render('auteurs/search_auteur.html.twig',[
+        return $this->render('admin/auteurs/search_auteur.html.twig',[
             'auteurs'=> $auteurs,
             'wordname' => $wordname
         ]);
     }
 
     /**
-     * @Route("auteurs/show/{id}", name="show_auteur")
+     * @Route("admin/auteurs/show/{id}", name="show_auteur")
      */
     Public function showAuteur(AuteurRepository $auteurRepository, $id)
     {
         $auteur = $auteurRepository->find($id);
 
-        return $this->render('auteurs/show_auteur.html.twig',['auteur' => $auteur]);
+        return $this->render('admin/auteurs/show_auteur.html.twig',['auteur' => $auteur]);
 
     }
 
