@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{% block section2 %}
+    <div class="blocArticles">
+
+        <div class="search">
+            <form action="{{ path('book_search') }}" method="get">
+                <label for="word"><strong>Que cherchez vous ? </strong></label>
+                <input type="text" name="word" placeholder="Votre recherche">
+                <input type="submit">
+
+            </form>
+        </div>
+
+    </div>
+{% endblock %}

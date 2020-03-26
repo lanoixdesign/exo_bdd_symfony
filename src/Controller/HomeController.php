@@ -74,7 +74,7 @@ class HomeController extends AbstractController
         $entityManager->flush();
 
        // return new Response('livre supprimé');
-        return $this->redirectToRoute('accueil');
+        return $this->redirectToRoute('auteurs');
     }
 
     /**

@@ -22,29 +22,25 @@ class Auteur
     private $name;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=250)
      */
     private $firstName;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="datetime", nullable=true)
      */
     private $birthDate;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="datetime", nullable=true))
      */
     private $deathDate;
 
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="text", nullable=true))
      */
     private $biography;
 
-    /**
-     * @ORM\Column(type="date")
-     */
-    private $date;
 
 
     public function getId(): ?int
@@ -76,24 +72,24 @@ class Auteur
         return $this;
     }
 
-    public function getBirthDate(): ?\DateTimeInterface
+    public function getBirthDate()
     {
         return $this->birthDate;
     }
 
-    public function setBirthDate(\DateTimeInterface $birthDate): self
+    public function setBirthDate( $birthDate): self
     {
         $this->birthDate = $birthDate;
 
         return $this;
     }
 
-    public function getDeathDate(): ?\DateTimeInterface
+    public function getDeathDate()
     {
         return $this->deathDate;
     }
 
-    public function setDeathDate(\DateTimeInterface $deathDate): self
+    public function setDeathDate($deathDate): self
     {
         $this->deathDate = $deathDate;
 
@@ -112,17 +108,6 @@ class Auteur
         return $this;
     }
 
-    public function getDate(): ?\DateTimeInterface
-    {
-        return $this->date;
-    }
-
-    public function setDate(\DateTimeInterface $date): self
-    {
-        $this->date = $date;
-
-        return $this;
-    }
 
 
 }

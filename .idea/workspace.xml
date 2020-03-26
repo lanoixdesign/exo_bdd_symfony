@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d20dfb1-d62c-43d3-85d6-f1cbc505c1a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/AuteurController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/auteurs.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/insert_auteur.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/auteurs/search_auteur.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/auteurs/show_auteur.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AuteurController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AuteurController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Auteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Auteur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/AuteurRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/AuteurRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/auteurs.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/auteurs/auteurs.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/insert_auteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/auteurs/insert_auteur.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/search.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/search.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +165,9 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/auteurs" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$" />
@@ -175,7 +184,8 @@
       <option name="presentableId" value="Default" />
       <updated>1584954697812</updated>
       <workItem from="1584954699894" duration="8079000" />
-      <workItem from="1584974663074" duration="32287000" />
+      <workItem from="1584974663074" duration="32421000" />
+      <workItem from="1585212500023" duration="9199000" />
     </task>
     <servers />
   </component>
@@ -195,10 +205,11 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="463" y="392" key="NewPhpFileDialog/0.23.1440.877@0.23.1440.877" timestamp="1585144031353" />
-    <state x="458" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1584974668494">
+    <state x="458" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1585212520552">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="458" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1584974668494" />
+    <state x="458" y="294" key="com.intellij.ide.util.TipDialog/1440.-157.1920.1057/0.23.1440.877@1440.-157.1920.1057" timestamp="1585212520552" />
     <state x="283" y="90" key="refactoring.ChangeSignatureDialog" timestamp="1585151738174">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

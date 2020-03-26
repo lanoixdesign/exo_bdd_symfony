@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+
+{% block section2 %}
+    <div class="show_auteur">
+
+
+
+                    <h4>{{ auteur.name }}</a></h4>
+                    <p>Birth Date : {{ auteur.birthdate | date('d/m/Y') }}</p>
+
+                    <p>Death Date : {{ auteur.deathdate  | date('d/m/Y') }}</p>
+
+                    <p> biography : {{ auteur.biography }}</p>
+                    <p> <a href="{{ path('delete_auteur', {'id':auteur.id}) }}">Suprimer l'auteur</a></p>
+
+
+
+    </div>
+{% endblock %}

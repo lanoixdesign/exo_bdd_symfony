@@ -13,32 +13,38 @@
 <body>
 <header>
         {% block header %}
-                <div class="logo ">
-                        <img class="img-fluid" src="{{ asset('img/logo_google.png') }}" alt="logo" width="850" height="300"></div>
-                <nav>
-                        <ul>
-                                <li>Lien 1</li>
-                                <li>Lien 2</li>
-                                <li>Lien 3</li>
-                        </ul>
-                </nav>
+        <div class="logo ">
+                <img class="img-fluid" src="{{ asset('img/logo_google.png') }}" alt="logo" width="850" height="300"></div>
+        <nav>
+                <ul>
+                    <li><a href="{{ path('accueil') }}">Accueil</a></li>
+                    <li><a href="{{ path('auteurs') }}">Auteurs</a></li>
+                    <li><a href="{{ path('insert_auteur') }}">Insérer Auteur</a></li>
+                </ul>
+        </nav>
+        <div class="search">
+            <form action="{{ path('book_search') }}" method="get">
+                <label for="word"><strong>Recherchez-vous un livre ? </strong></label>
+                <input type="text" name="word" placeholder="Votre recherche">
+                <input type="submit">
+
+            </form>
+        </div>
+
+        <div class="search">
+            <form action="{{ path('search_auteur') }}" method="get">
+                <label for="wordname"><strong>Ou un auteur ? </strong></label>
+                <input type="text" name="wordname" placeholder="Votre recherche">
+                <input type="submit">
+
+            </form>
+        </div>
         {% endblock %}
 </header>
 
 
 <main>
-        <section>
-                {% block section1 %}
-                        <div class="search">
-                                <form action="{{ path('book_search') }}" method="get">
-                                        <label for="word"><strong>Que cherchez vous ? </strong></label>
-                                        <input type="text" name="word" placeholder="Votre recherche">
-                                        <input type="submit">
 
-                                </form>
-                        </div>
-                {% endblock %}
-        </section>
 
         <section>
                 {% block section2 %}

@@ -47,4 +47,20 @@ class AuteurRepository extends ServiceEntityRepository
         ;
     }
     */
+
+    public function getByAuteurInLibrary($wordname)
+    {
+        //$word ='japon';
+
+        $queryBuilder = $this->createQueryBuilder('auteur');
+
+        $query = $queryBuilder->select('auteur')
+            ->where('auteur.name LIKE :wordname')
+            ->setParameter('wordname', '%'.$wordname.'%')
+            ->getQuery();
+
+        $results = $query->getResult();
+
+        return $results;
+    }
 }

@@ -19,7 +19,7 @@ class AuteurController extends AbstractController
     {
         $auteurs = $auteurRepository->findAll();
 
-        return $this->render('auteurs.html.twig',[
+        return $this->render('auteurs/auteurs.html.twig',[
             'auteurs' => $auteurs
             ]);
 
@@ -48,7 +48,7 @@ class AuteurController extends AbstractController
 
         $entityManager->flush();
 
-        return new Response('livre enregistré');
+        return new Response('Auteur enregistré');
 
     }
 
@@ -65,7 +65,30 @@ class AuteurController extends AbstractController
 
     }
 
+    /**
+     * @Route("auteurs/search", name="search_auteur")
+     */
+    public function searchByName(AuteurRepository $auteurRepository, Request $request)
+    {
+        $wordname =$request->query->get('wordname');
+        $auteurs = $auteurRepository->getByAuteurInLibrary($wordname);
 
+        return $this->render('auteurs/search_auteur.html.twig',[
+            'auteurs'=> $auteurs,
+            'wordname' => $wordname
+        ]);
+    }
+
+    /**
+     * @Route("auteurs/show/{id}", name="show_auteur")
+     */
+    Public function showAuteur(AuteurRepository $auteurRepository, $id)
+    {
+        $auteur = $auteurRepository->find($id);
+
+        return $this->render('auteurs/show_auteur.html.twig',['auteur' => $auteur]);
+
+    }
 
 
 
