@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d20dfb1-d62c-43d3-85d6-f1cbc505c1a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/Front/AuteurController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Front/BookController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Front/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/admin/DashboardController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/dashboard.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/front/auteurs/auteur.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/front/auteurs/auteurs.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/front/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/front/books/book.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/front/books/books.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/front/home.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/admin/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/admin/BookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Front/AuteurController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Front/AuteurController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/auteurs/auteurs.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/auteurs/auteurs.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front/books/books.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/books/books.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,12 +182,24 @@
       <workItem from="1584954699894" duration="8079000" />
       <workItem from="1584974663074" duration="32421000" />
       <workItem from="1585212500023" duration="13318000" />
-      <workItem from="1585249314182" duration="4841000" />
+      <workItem from="1585249314182" duration="5962000" />
     </task>
+    <task id="LOCAL-00001" summary="font et admin controller et html">
+      <created>1585307670573</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585307670573</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="font et admin controller et html" />
+    <option name="LAST_COMMIT_MESSAGE" value="font et admin controller et html" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2071" y="-157" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585305416283">
@@ -208,6 +210,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="129" y="223" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.877@0.23.1440.877" timestamp="1585151379435" />
+    <state x="2125" y="-128" key="CommitChangelistDialog2" timestamp="1585307670157">
+      <screen x="1440" y="-157" width="1600" height="877" />
+    </state>
+    <state x="2125" y="-128" key="CommitChangelistDialog2/1440.-157.1600.877/0.23.1440.877@1440.-157.1600.877" timestamp="1585307670157" />
     <state x="607" y="283" key="NewPhpClassDialog" timestamp="1585127904203">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -216,6 +222,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="463" y="392" key="NewPhpFileDialog/0.23.1440.877@0.23.1440.877" timestamp="1585144031353" />
+    <state x="2128" y="9" key="Vcs.Push.Dialog.v2" timestamp="1585307676895">
+      <screen x="1440" y="-157" width="1600" height="877" />
+    </state>
+    <state x="2128" y="9" key="Vcs.Push.Dialog.v2/1440.-157.1600.877/0.23.1440.877@1440.-157.1600.877" timestamp="1585307676895" />
     <state x="458" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1585249804631">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

@@ -28,7 +28,7 @@ class AuteurController extends AbstractController
     {
         $auteur = $auteurRepository->find($id);
 
-        return $this->render('front/auteur/auteur.html.twig', [
+        return $this->render('front/auteurs/auteur.html.twig', [
             'auteur' => $auteur
         ]);
     }
