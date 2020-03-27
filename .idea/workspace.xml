@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d20dfb1-d62c-43d3-85d6-f1cbc505c1a3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/Front/AuteurController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Front/BookController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Front/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/admin/DashboardController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/dashboard.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/front/auteurs/auteur.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/front/auteurs/auteurs.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/front/base.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/front/books/book.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/front/books/books.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/front/home.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/admin/AuteurController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/admin/AuteurController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/admin/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/admin/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/admin/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/admin/BookController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/auteurs/auteurs.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/auteurs/auteurs.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/auteurs/insert_auteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/auteurs/insert_auteur.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/auteurs/search_auteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/auteurs/search_auteur.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/auteurs/show_auteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/auteurs/show_auteur.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/books/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/books/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/books/search.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/books/search.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,19 +163,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/front" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/front" />
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/admin" />
       <recent name="$PROJECT_DIR$/templates/admin/books" />
       <recent name="$PROJECT_DIR$/src/Controller/admin" />
       <recent name="$PROJECT_DIR$/templates/auteurs" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -186,7 +191,8 @@
       <updated>1584954697812</updated>
       <workItem from="1584954699894" duration="8079000" />
       <workItem from="1584974663074" duration="32421000" />
-      <workItem from="1585212500023" duration="11473000" />
+      <workItem from="1585212500023" duration="13318000" />
+      <workItem from="1585249314182" duration="4841000" />
     </task>
     <servers />
   </component>
@@ -194,6 +200,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2071" y="-157" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585305416283">
+      <screen x="1440" y="-157" width="1600" height="877" />
+    </state>
+    <state x="2071" y="-157" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1440.-157.1600.877/0.23.1440.877@1440.-157.1600.877" timestamp="1585305416283" />
     <state x="129" y="223" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1585151379435">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -206,15 +216,17 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="463" y="392" key="NewPhpFileDialog/0.23.1440.877@0.23.1440.877" timestamp="1585144031353" />
-    <state x="458" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1585212520552">
+    <state x="458" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1585249804631">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="458" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1584974668494" />
+    <state x="458" y="294" key="com.intellij.ide.util.TipDialog/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1585249804631" />
     <state x="458" y="294" key="com.intellij.ide.util.TipDialog/1440.-157.1920.1057/0.23.1440.877@1440.-157.1920.1057" timestamp="1585212520552" />
-    <state x="283" y="90" key="refactoring.ChangeSignatureDialog" timestamp="1585151738174">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="1754" y="-90" key="refactoring.ChangeSignatureDialog" timestamp="1585305156795">
+      <screen x="1440" y="-157" width="1600" height="877" />
     </state>
     <state x="283" y="90" key="refactoring.ChangeSignatureDialog/0.23.1440.877@0.23.1440.877" timestamp="1585151738174" />
+    <state x="1754" y="-90" key="refactoring.ChangeSignatureDialog/1440.-157.1600.877/0.23.1440.877@1440.-157.1600.877" timestamp="1585305156795" />
     <state x="283" y="90" key="refactoring.ChangeSignatureDialog/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1585044034163" />
   </component>
 </project>

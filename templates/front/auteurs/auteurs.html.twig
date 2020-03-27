@@ -1,0 +1,24 @@
+{% extends "front/base.html.twig" %}
+
+{% block section2 %}
+    <div class="blocArticles">
+        <ul>
+            {% for auteur in auteurs %}
+                <li>
+                    <p>{{ auteur.firstName }} {{ auteur.name }}</p>
+                    <p>{{ auteur.biography }}</p>
+                    <p>Naissance: {{ auteur.birthDate| date('d-m-Y') }}</p>
+
+                    {% if auteur.deathDate %}
+                        <p>Mort: {{ auteur.deathDate| date('d-m-Y') }}</p>
+                    {% endif %}
+
+                    <a href="{{ path('auteur_show', {'id': auteur.id}) }}">Voir l'auteur</a>
+
+                    <br/>
+                    ____
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

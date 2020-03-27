@@ -1,0 +1,16 @@
+{% extends "front/base.html.twig" %}
+
+{% block section2 %}
+    <div class="blocArticles">
+        <h1>Mon livre : </h1>
+        <div>
+            <p>Titre : {{ book.title }}</p>
+            <p>Auteur : {{ book.auteur }}</p>
+            <p>Résumé : {{ book.resume }}</p>
+            <p>Nombre de pages : {{ book.nbpages }}</p>
+        </div>
+        <a href="{{ path('book_show', {'id' : book.id}) }}">
+            Voir le livre
+        </a>
+    </div>
+{% endblock %}

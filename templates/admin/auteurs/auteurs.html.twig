@@ -8,7 +8,9 @@
                     <h4><a href="{{ path('admin_show_auteur', {'id':auteur.id}) }}">{{ auteur.name }}</a></h4>
                     <p>Birth Date : {{ auteur.birthdate | date('d/m/Y') }}</p>
 
-                    <p>Death Date : {{ auteur.deathdate  | date('d/m/Y') }}</p>
+                    {% if author.deathDate %}
+                        <p>Mort: {{ auteur.deathDate| date('d-m-Y') }}</p>
+                    {% endif %}
 
                     <p> biography : {{ auteur.biography }}</p>
                     <p> <a href="{{ path('admin_delete_auteur', {'id':auteur.id}) }}">Suprimer l'auteur</a></p>

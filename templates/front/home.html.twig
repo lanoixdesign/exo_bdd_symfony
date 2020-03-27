@@ -1,0 +1,9 @@
+{% extends "front/base.html.twig" %}
+
+{% block section2 %}
+    <div class="blocArticles">
+        <h1>Bienvenue sur la librairie en ligne ! </h1>
+        <a href="{{ path('book_list') }}">Voir les livres</a>
+        <a href="{{ path('auteurs_list') }}">Voir les auteurs</a>
+    </div>
+{% endblock %}
